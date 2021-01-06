@@ -58,7 +58,7 @@ The goals above and the application can be further understood with the following
 :
 **`fs`**
 : The `fs` module of Node.js provides a lot of useful functions to access and interact with the *file system*. You do not install it because it is a part of the Node.js core. It can be used by requiring it 
->const fs = require('fs')
+>`const fs = require('fs')`
 
 ~~common use for the File System module. When wrapped around a standard POSIX function it is referred to as a method, ex. `fs.readFile()` is used to read files on your computer.~~
 
@@ -110,11 +110,15 @@ THEN I am taken to the corresponding section of the README
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
 1. Open GitHub and create a new repository. <!--do not add a README.md file upon creation>
-- Name your new repository.
-- Open Terminal (if MacOS) and create a new directory using `mkdir project-name`
+* Name your new repository.
+* Open Terminal (if MacOS) and create a new directory using `mkdir project-name`
 - Make sure you are in the root file of your local repository before you create any files. 
-- Clone your repository using `git clone ssh-key-from-repository`
-- 
+    - Clone your repository using `git clone ssh-key-from-repository`
+* Test format
+    * test part
+    - test list 
+    3. test number
+    
 - Create a .gitignore file <!--in VScode or Terminal-->: `touch .gitignore`
 - type in `node_modules` and `.DS_Store` <!--image? ![alt text](image.jpg)-->
 - Create a new package.json file
