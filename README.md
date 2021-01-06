@@ -163,19 +163,6 @@ If followed tutorials, include links to those here as well.
 
 The last section of a README is a license. This lets other developers know what they can and cannot do with your project.
 
-
-# Mini-Project
-
-In this activity, you will build a command-line tool that generates a README.md file from user input.
-
-## Instructions
-
-* Your application should prompt the user for information like their name, location, bio, LinkedIn URL, and GitHub URL. Feel free to add any additional prompts you think of.
-
-* An HTML document containing the information collected from the prompts should be constructed and written to the file system. Be sure to add some CSS styling to the document.
-
-
-
 ## Instructions
 
 It might be a good idea to start building out the HTML skeleton in a real HTML file. Once you're happy with the HTML file's appearance in the browser, you can copy and paste its contents into a string template literal. Then you can write a function to insert the user input into the appropriate places in the HTML string before writing it to the file system.
