@@ -5,30 +5,23 @@ const { captureRejectionSymbol } = require("events");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const acceptanceCriteria = [
+// const acceptanceCriteria = [
 
-    {
-        type: "input",
-        name: "given",
-        message: "GIVEN"
-    },
+//     {
+//         type: "input",
+//         name: "given",
+//         message: "GIVEN"
+//     },
 
-    {
-        type: "input",
-        name: "when-1",
-        message: "WHEN"
+//     {
+//         type: "input",
+//         name: "when-1",
+//         message: "WHEN"
 
-    },
-];
+//     },
+// ];
 
-const tableOfContents = outline.addedContents[choices];
 
-const addTC = () => {
-    for (i = 0; i < 0; i++) {
-
-    }
-    return outline.addedContents.choices[i]
-}
 
 const outline = [
 
@@ -50,9 +43,11 @@ const outline = [
         message: "Include Table of Contents?"
     },
 
-    {   // choose which to include
+    {   // choose which sections to include in table of contents
         type: "checkbox",
-        name: "addedContents",
+        name: "tableOfContents",
+        message: "Select what to include in Table of Contents",
+        default: ["Description", "Installation", "Usage", "Contributing", "Tests"],
         choices: [
             "Description",
             "Goals",
@@ -66,59 +61,13 @@ const outline = [
             "Contributing",
             "Tests",
             "Questions"
-        ]
+        ],
+
 
     },
 
-    // {
-    //     type: "input", // goals
-    //     name: "goals",
-    //     message: "What are the goals of this application?" //list format?
-    // },
 
-    // {
-    //     type: "", // user story
-    //     name: "userStory",
-    //     message: "Enter User Story"
-    // },
 
-    {
-        type: "confirm",
-        name: "addAC",
-        message: "Add Acceptance Criteria?"
-    },
-
-    {
-        type: "input",
-        name: "acceptanceCriteria",
-        message: "What is the Acceptance Criteria?"
-        ["",
-        "", ]
-    },
-
-    {
-        type: "confirm",
-        name: "developer",
-        message: "Include Developer?"
-    },
-
-    // {
-    //     type: "input",
-    //     name: "developer",
-    //     message: "Describe what you worked on specifically."
-    // },
-
-    // {
-    //     type: "",
-    //     name: "link",
-    //     message: "Enter User Story"
-    // },
-
-    // {
-    //     type: "confirm", // copyright addition
-    //     name: "copyright",
-    //     message: "Add copyright?"
-    // },
 ]
 
 const promptUser = () => {
@@ -126,14 +75,7 @@ const promptUser = () => {
 
 };
 
-const fillAcceptanceCriteria = () => {
-    if (inquirer.prompt(outline.addAC) === true) {
-        return inquirer.prompt(outline.acceptanceCriteria);
-    } else {
-        return inquirer.prompt(outline[8]);
-    };
 
-}
 
 const generateREADME = (addedText) => {
 
