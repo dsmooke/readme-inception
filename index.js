@@ -6,6 +6,7 @@ const { captureRejectionSymbol } = require("events");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 const outline = [
+
     {
         type: "", // title
         name: "title",
@@ -16,6 +17,11 @@ const outline = [
         type: "",
         name: "description",
         message: "Enter description of application."
+    },
+    {
+        type: "input",
+        name: "goals",
+        message: "What are the goals of this application?" //list format?
     },
 
     {
@@ -32,8 +38,14 @@ const outline = [
 
     {
         type: "",
-        name: "",
+        name: "link",
         message: "Enter User Story"
+    },
+
+    {
+        type: "confirm", // copyright addition
+        name: "copyright",
+        message: "Add copyright?"
     },
 ]
 
@@ -44,7 +56,11 @@ const promptUser = () => {
 
 const generateREADME = (addedText) => {
 
-    return `markdown file format outline ${outline.title} etc....`
+    return `markdown file format outline # ${outline.title} 
+    # ${outline.developer} etc....${outline.title}
+    ${outline.description}
+    ${outline.userstory}
+    ${outline.developer}`
 }
 
 const init = async () => {
@@ -54,7 +70,7 @@ const init = async () => {
         // console.log(addedText);
         const readme = generateREADME(addedText);
         // console.log(readme);
-        await writeFileAsync("README.md", readme);
+        await writeFileAsync("New_README.md", readme);
 
         console.log("Successfully wrote README.md");
 
