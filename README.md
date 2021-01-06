@@ -1,10 +1,13 @@
 # README Inception 
 
 ## Description
-This is the eigth assigment from the UConn Coding Boot Camp curriculum. This assigment utilizes node.js to  which combined the following topics: Git, Terminal, GitHub, GitHub Pages, Web Accessibility, HTML, CSS, JavaScript, jQuery, Bootstrap, APIs, DOM, WeWebCamp README Generator
+
+This is the eigth assigment from the UConn Coding Boot Camp curriculum. We have covered the following topics thus far: Git, Terminal, GitHub, GitHub Pages, Web Accessibility, HTML, CSS, JavaScript, jQuery, Bootstrap, DOM Traversal, Web APIs, Third-Party APIs, and Server-Side APIs.
+
+This assigment utilizes Node.js.
 
 ## Table of Contents
-Add if readme is very long.
+
 * [Goals](#goals)
 * [Definitions](#definitions)
 * [Instructions](#instructions)
@@ -18,18 +21,31 @@ Add if readme is very long.
 
 ## Goals 
 
-1. To create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package].
+1. To create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
 
 2. Invoke the application by using the following command: `node index.js`
 
 3. Use Screencastify and provide a link to a walkthrough video that demonstrates its functionality.
 
-
 ### Definitions
 The goals above and the application can be further understood with the following definitions:
 
+* You’ll need the following tools and technologies to accomplish this:
+
+  * `fs` for writing to the file system
+
+  * `inquirer` for collecting user input
+
+  * String template literals for generating a string version of the HTML/README.md document before it is written to the file system
+
+  * Promises for handling asynchronous behavior
+
 **node.js**
-: 
+: an implementation of the V8 JavaScript engine without Chrome. It allows you to write server-side code using JavaScript. This means that you no longer need a browser to run JavaScript. You can do so from the command line. Node.js ships with a **standard library**.
+
+**standard library**
+: The standard library contains a number of modules that allow you to extend the functionality of Node.js, like `fs`, which you’ll use to read and write files.
+
 **command-line**
 :
 **dependencies**
@@ -41,13 +57,19 @@ The goals above and the application can be further understood with the following
 **`require()`**
 :
 **`fs`**
-:
+: The `fs` module of Node.js provides a lot of useful functions to access and interact with the *file system*. You do not install it because it is a part of the Node.js core. It can be used by requiring it 
+>const fs = require('fs')
+
+~~common use for the File System module. When wrapped around a standard POSIX function it is referred to as a method, ex. `fs.readFile()` is used to read files on your computer.~~
+
+~~Asynchronous callback functions. Synchronous versions of the calls will block the entire process until they complete - halting all connections.~~
+
 **`util`**
 :
 **`promisify`**
 :
 **`try...catch(error)`**
-:
+: used to handle exceptions when using the synchronous form.
 **`await`**
 :
 
@@ -120,6 +142,7 @@ If you used asny third-party assets that require attribution, list the creators 
 If followed tutorials, include links to those here as well. 
 
 - ["How to use the Inquirer Node package"](https://www.educative.io/edpresso/how-to-use-the-inquirer-node-package)
+- ["The Node.js fs module"](https://nodejs.dev/learn/the-nodejs-fs-module)
 
 ## License 
 
@@ -128,7 +151,7 @@ The last section of a README is a license. This lets other developers know what 
 
 # Mini-Project
 
-In this activity, you will build a command-line tool that generates an HTML portfolio page from user input.
+In this activity, you will build a command-line tool that generates a README.md file from user input.
 
 ## Instructions
 
@@ -136,15 +159,7 @@ In this activity, you will build a command-line tool that generates an HTML port
 
 * An HTML document containing the information collected from the prompts should be constructed and written to the file system. Be sure to add some CSS styling to the document.
 
-* You’ll need the following tools and technologies to accomplish this:
 
-  * `fs` for writing to the file system
-
-  * `inquirer` for collecting user input
-
-  * String template literals for generating a string version of the HTML document before it is written to the file system
-
-  * Promises for handling asynchronous behavior
 
 ## Instructions
 
