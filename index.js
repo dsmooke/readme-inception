@@ -103,32 +103,26 @@ const generateREADME = (answers) => {
     ${answers.description} 
     
     ## Table of Contents 
-    * ${answers.addedContents[]}
+    ${answers.tableOfContents}
     
     ## Goals
-    1. ${answers.goal[1]}
-    2. ${answers.goal[2]}
-    3. ${answers.goal[3]}
+    1. {answers.goal[1]}
+    2. {answers.goal[2]}
+    3. {answers.goal[3]}
 
     ## Definitions 
-    ${answers.term[1]}
-    : ${answers.defintion[1]}
+    {answers.term[1]}
+    : {answers.defintion[1]}
 
     ## Instructions
-    ### User Story ${answers.userStory}
+    ### User Story {answers.userStory}
 
-    ```
-        `answers of user story`
-        ```
-
+    
     ### Acceptance Criteria
     The application must meet the following requirements:
-    ```
-        `answers of acceptance criteria`
-        ```
 
     ## Installation
-    ${answers.installation}
+    {answers.installation}
 
     ## Developer 
     {answers.developer}
@@ -141,7 +135,7 @@ const generateREADME = (answers) => {
     {answers.credits}
 
     ## License 
-    {answers.license}
+    ${answers.license}
 
     ---
 
