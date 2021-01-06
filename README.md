@@ -109,19 +109,30 @@ THEN I am taken to the corresponding section of the README
 ## Installation
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
-1. Open GitHub and create a new repository. <!--do not add a README.md file upon creation>
-* Name your new repository.
-* Open Terminal (if MacOS) and create a new directory using `mkdir project-name`
-- Make sure you are in the root file of your local repository before you create any files. 
-    - Clone your repository using `git clone ssh-key-from-repository`
+1. Create a new repository. 
+    * Open GitHub and create new repository.
+    * do NOT add a README.md file upon creation (that would defeat the purpose!).
+2. Create a new directory to house new repo on your local computer. 
+    * Open Terminal (if MacOS), create a new directory using `mkdir project-name`
+    * Make sure you are in the *root file* of your local repository before you create any files. 
+3. Clone your GitHub repository to your local computer (make sure you are in the root folder of your new directory)
+    * in Terminal: ```
+    git clone ssh-key-from-repository
+    ```
+4. Create a .gitignore file:
+    * type `node_modules` in first line
+    * type `.DS_Store` in second line
+
+5. Create a new **package.json** file:
+/* image? ![alt text](image.jpg)*/
+    * 
+
 * Test format
     * test part
     - test list 
     3. test number
-    
-- Create a .gitignore file <!--in VScode or Terminal-->: `touch .gitignore`
-- type in `node_modules` and `.DS_Store` <!--image? ![alt text](image.jpg)-->
-- Create a new package.json file
+
+
 - Initialize `npm`: `npm init`. This will be used to set up a new or existing npm package. You can customize the fields, or you can continue to press the enter key until you see `0 vulnerabilities`.
 - This will create a `package.json` file and a `package-lock.json` file. 
 - Install the Inquirer package using: `npm install inquirer`
