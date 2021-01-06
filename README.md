@@ -15,7 +15,7 @@ Add if readme is very long.
 * [Credits](#credits)
 * [License](#license)
 
-# Goals 
+## Goals 
 
 1. To create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package].
 
@@ -27,17 +27,28 @@ Add if readme is very long.
 ### Definitions
 The goals above and the application can be further understood with the following definitions:
 
-**node.js**: 
-**command-line**:
-**dependencies**:
-**inquirer**: an npm package that provides an easy way to capture user input in your `node.js` command-line interface applications. It provides several methods for asking questions and returning answers from the user that can be accessed by a `.then` promise function. <!--check for .then promise function>
-**promise function**:
-**`require()`**:
-**`fs`**:
-**`util`**:
-**`promisify`**:
-**`try...catch(error)`**:
-**`await`**:
+**node.js**
+: 
+**command-line**
+:
+**dependencies**
+:
+**inquirer**
+: an npm package that provides an easy way to capture user input in your `node.js` command-line interface applications. It provides several methods for asking questions and returning answers from the user that can be accessed by a `.then` promise function. <!--check for .then promise function>
+**promise function**
+:
+**`require()`**
+:
+**`fs`**
+:
+**`util`**
+:
+**`promisify`**
+:
+**`try...catch(error)`**
+:
+**`await`**
+:
 
 ## Installation
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
