@@ -1,9 +1,85 @@
-# readme-inception
-${outline.title}
-${outline.description}
-${outline.userstory}
-${outline.developer}
-README Generator
+# README Inception 
+
+## Description
+This is the eigth assigment from the UConn Coding Boot curriculum. This assigment utilizes node.js to  which combined the following topics: Git, Terminal, GitHub, GitHub Pages, Web Accessibility, HTML, CSS, JavaScript, jQuery, Bootstrap, APIs, DOM, WeWebCamp README Generator
+
+## Table of Contents
+Add if readme is very long.
+* [Goals](#goals)
+* [Definitions](#definitions)
+* [User Story](#user-story)
+* [Acceptance Criteria](#acceptance-criteria)
+* [Installation](#installation)
+* [Video](#video)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+
+# Goals 
+
+1. To create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package].
+
+2. Invoke the application by using the following command: `node index.js`
+
+3. Use Screencastify and provide a link to a walkthrough video that demonstrates its functionality.
+
+
+### Definitions
+The goals above and the application can be further understood with the following definitions:
+
+**node.js**: 
+**command-line**:
+**dependencies**:
+**inquirer**: an npm package that provides an easy way to capture user input in your `node.js` command-line interface applications. It provides several methods for asking questions and returning answers from the user that can be accessed by a `.then` promise function. <!--check for .then promise function>
+**promise function**:
+**`require()`**:
+**`fs`**:
+**`util`**:
+**`promisify`**:
+**`try...catch(error)`**:
+**`await`**:
+
+## Installation
+What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+
+1. Open GitHub and create a new repository. <!--do not add a README.md file upon creation>
+- Name your new repository.
+- Open Terminal (if MacOS) and create a new directory using `mkdir project-name`
+- Make sure you are in the root file of your local repository before you create any files. 
+- Clone your repository using `git clone ssh-key-from-repository`
+- 
+- Create a .gitignore file <!--in VScode or Terminal-->: `touch .gitignore`
+- type in `node_modules` and `.DS_Store` <!--image? ![alt text](image.jpg)-->
+- Create a new package.json file
+- Initialize `npm`: `npm init`. This will be used to set up a new or existing npm package. You can customize the fields, or you can continue to press the enter key until you see `0 vulnerabilities`.
+- This will create a `package.json` file and a `package-lock.json` file. 
+- Install the Inquirer package using: `npm install inquirer`
+- This will create a `node_modules` file. 
+- You are now ready to create your `index.js` file: `touch index.js`
+- 
+2. ~~Open a text-editor, I will be using VScode.~~
+3. 
+> `const inquirer = require("inquirer");`
+`const fs = require("fs");`
+`const util = require("util");`
+
+
+## Usage
+Provide instructions and examples for use. Include screenshots as needed.
+
+## Credits 
+List your collaborators, if any, with links to their GitHub profiles. 
+
+If you used asny third-party assets that require attribution, list the creators with links to their primary web presence in this section. 
+
+If followed tutorials, include links to those here as well. 
+
+- ["How to use the Inquirer Node package"](https://www.educative.io/edpresso/how-to-use-the-inquirer-node-package)
+
+## License 
+
+The last section of a README is a license. This lets other developers know what they can and cannot do with your project.
+
 
 # Mini-Project
 
