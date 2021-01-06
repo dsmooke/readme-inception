@@ -66,9 +66,34 @@ const outline = [
 
     },
 
+    // {   // installation steps
+    //     type: "input",
+    //     name: "installation",
+    //     message: "What are the steps required to install your project?"
+    // },
 
+    // {   // usage instructions
+    //     type: "input",
+    //     name: "usage",
+    //     message: "Provide instructions and examples for use."
+    // },
+
+    { // select a license
+        type: "list",
+        name: "license",
+        choices: [
+            "MIT",
+            "GNU GPLv3",
+            "Trilogy"
+        ]
+    },
 
 ]
+
+// const addLicense = () => {
+//     return outline.license.choices
+
+// }
 
 const promptUser = () => {
     return inquirer.prompt(outline);
@@ -77,52 +102,47 @@ const promptUser = () => {
 
 
 
-const generateREADME = (addedText) => {
+const generateREADME = (answers) => {
 
-    return `# ${outline.title} 
+    return `# ${answers.title} 
     ## Description 
-    ${outline.description} 
+    ${answers.description} 
     
     ## Table of Contents 
-    * ${outline.addedContents[]}
+    * ${answers.tableOfContents}
     
     ## Goals
-    1. ${outline.goal[1]}
-    2. ${outline.goal[2]}
-    3. ${outline.goal[3]}
+    1. {answers.goal[1]}
+    2. {answers.goal[2]}
+    3. {answers.goal[3]}
 
     ## Definitions 
-    ${outline.term[1]}
-    : ${outline.defintion[1]}
+    {answers.term[1]}
+    : {answers.defintion[1]}
 
     ## Instructions
-    ### User Story ${outline.userStory}
+    ### User Story {answers.userStory}
 
-    ```
-        `outline of user story`
-        ```
 
     ### Acceptance Criteria
     The application must meet the following requirements:
-    ```
-        `outline of acceptance criteria`
-        ```
+    
 
     ## Installation
-    ${outline.installation}
+    ${answers.installation}
 
     ## Developer 
-    {outline.developer}
+    {answers.developer}
 
     ## Usage 
-    {outline.usage}
+    {answers.usage}
     ![image alt](link.jpg)
 
     ## Credits
-    {outline.credits}
+    {answers.credits}
 
     ## License 
-    {outline.license}
+    ${answers.license}
 
     ---
 
