@@ -99,48 +99,46 @@ const promptUser = () => {
 const generateREADME = (answers) => {
 
     return `# ${answers.title} 
-    ## Description 
+## Description 
     ${answers.description} 
     
-    ## Table of Contents 
-    ${answers.tableOfContents}
+## Table of Contents ${answers.tableOfContents}
     
-    ## Goals
-    1. {answers.goal[1]}
-    2. {answers.goal[2]}
-    3. {answers.goal[3]}
+## Goals
+1. {answers.goal[1]}
+2. {answers.goal[2]}
+3. {answers.goal[3]}
 
-    ## Definitions 
-    {answers.term[1]}
-    : {answers.defintion[1]}
+## Definitions 
+{answers.term[1]}
+: {answers.defintion[1]}
 
-    ## Instructions
-    ### User Story {answers.userStory}
+## Instructions
+### User Story {answers.userStory}
 
-    
-    ### Acceptance Criteria
-    The application must meet the following requirements:
+### Acceptance Criteria
+The application must meet the following requirements:
 
-    ## Installation
-    {answers.installation}
+## Installation
+{answers.installation}
 
-    ## Developer 
-    {answers.developer}
+## Developer 
+{answers.developer}
 
-    ## Usage 
-    {answers.usage}
-    ![image alt](link.jpg)
+## Usage 
+{answers.usage}
+![image alt](link.jpg)
 
-    ## Credits
-    {answers.credits}
+## Credits
+{answers.credits}
 
-    ## License 
-    ${answers.license}
+## License 
+${answers.license}
 
-    ---
+---
 
-    © 2020 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-    `
+© 2020 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+`
 
 }
 
