@@ -2,8 +2,11 @@ const inquirer = require('inquirer');
 const fs = require("fs");
 const util = require("util");
 const { captureRejectionSymbol } = require("events");
+const { fileURLToPath } = require('url');
 
 const writeFileAsync = util.promisify(fs.writeFile);
+
+// const mitLicense = fileURLToPath("./MIT_License.txt")
 
 // const acceptanceCriteria = [
 
@@ -20,6 +23,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 //     },
 // ];
+
 
 
 
@@ -134,6 +138,8 @@ The application must meet the following requirements:
 
 ## License 
 ${answers.license}
+{mitLicense}
+
 
 ---
 
