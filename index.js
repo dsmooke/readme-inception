@@ -65,7 +65,6 @@ const outline = [
 
 
     },
-
     // {   // installation steps
     //     type: "input",
     //     name: "installation",
@@ -90,11 +89,6 @@ const outline = [
 
 ]
 
-// const addLicense = () => {
-//     return outline.license.choices
-
-// }
-
 const promptUser = () => {
     return inquirer.prompt(outline);
 
@@ -102,47 +96,52 @@ const promptUser = () => {
 
 
 
-const generateREADME = (answers) => {
+const generateREADME = (addedText) => {
 
-    return `# ${answers.title} 
+    return `# ${outline.title} 
     ## Description 
-    ${answers.description} 
+    ${outline.description} 
     
     ## Table of Contents 
-    * ${answers.tableOfContents}
+    * ${outline.addedContents[]}
     
     ## Goals
-    1. {answers.goal[1]}
-    2. {answers.goal[2]}
-    3. {answers.goal[3]}
+    1. ${outline.goal[1]}
+    2. ${outline.goal[2]}
+    3. ${outline.goal[3]}
 
     ## Definitions 
-    {answers.term[1]}
-    : {answers.defintion[1]}
+    ${outline.term[1]}
+    : ${outline.defintion[1]}
 
     ## Instructions
-    ### User Story {answers.userStory}
+    ### User Story ${outline.userStory}
 
+    ```
+        `outline of user story`
+        ```
 
     ### Acceptance Criteria
     The application must meet the following requirements:
-    
+    ```
+        `outline of acceptance criteria`
+        ```
 
     ## Installation
-    ${answers.installation}
+    ${outline.installation}
 
     ## Developer 
-    {answers.developer}
+    {outline.developer}
 
     ## Usage 
-    {answers.usage}
+    {outline.usage}
     ![image alt](link.jpg)
 
     ## Credits
-    {answers.credits}
+    {outline.credits}
 
     ## License 
-    ${answers.license}
+    {outline.license}
 
     ---
 
