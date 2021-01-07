@@ -102,7 +102,10 @@ const promptUser = () => {
 
 const generateREADME = (answers) => {
 
-    return `# ${answers.title} 
+    if (answers.license === mitLicense) { //text document variable
+        console.log(answers.license);
+
+        return `# ${answers.title} 
 ## Description 
     ${answers.description} 
     
@@ -138,7 +141,7 @@ The application must meet the following requirements:
 
 ## License 
 ${answers.license}
-{mitLicense}
+{mitLicense} 
 
 
 ---
@@ -146,22 +149,22 @@ ${answers.license}
 © 2020 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 `
 
-}
-
-const init = async () => {
-
-    try {
-        const addedText = await promptUser();
-        // console.log(addedText);
-        const readme = generateREADME(addedText);
-        // console.log(readme);
-        await writeFileAsync("New_README.md", readme);
-
-        console.log("Successfully wrote README.md");
-
-    } catch (error) {
-        console.log(error);
     }
-}
 
-init();
+    const init = async () => {
+
+        try {
+            const addedText = await promptUser();
+            // console.log(addedText);
+            const readme = generateREADME(addedText);
+            // console.log(readme);
+            await writeFileAsync("New_README.md", readme);
+
+            console.log("Successfully wrote README.md");
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    init();
