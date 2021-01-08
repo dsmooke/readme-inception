@@ -141,7 +141,7 @@ The application must meet the following requirements:
 
 ## License 
 ${answers.license}
-{mitLicense} 
+[MIT License]("mitLicense.txt")
 
 
 ---
