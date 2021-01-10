@@ -73,7 +73,7 @@ const outline = [
         type: "input",
         name: "userName",
         message: "Enter your GitHub username"
-    }
+    },
     // {   // installation steps
     //     type: "input",
     //     name: "installation",
@@ -148,11 +148,11 @@ The application must meet the following requirements:
 {answers.credits}
 
 ## Questions
-[GitHub Profile](https://github.com/${answers.userName})
+Link to my [GitHub Profile](https://github.com/${answers.userName})
 
 ## License 
 ${answers.license}
-[MIT License]("mitLicense.txt")
+[MIT License](mitLicense.txt)
 
 
 ---
