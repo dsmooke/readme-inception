@@ -145,7 +145,7 @@ Link to my [GitHub Profile](https://github.com/${answers.userName})
 
 ## License 
 
-[${answers.license} License](${answers.license.toLowerCase}License.txt)
+[${answers.license} License](${answers.license}License.txt)
 
 
 
