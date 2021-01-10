@@ -6,19 +6,8 @@ const { fileURLToPath } = require('url');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const mitLicense = "mitLicense.txt";
-const mitBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-const gnuLicense = "gnuLicense.txt";
-const gnuBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-
-
-const licenseBadge = {
-    "MIT": mitBadge,
-    "GNUGPLv3": gnuBadge,
-
-
-};
-
+// const mitURL = "https://opensource.org/licenses/MIT)";
+// const gnuURL = "https://www.gnu.org/licenses/gpl-3.0";
 
 const outline = [
 
@@ -85,27 +74,34 @@ const outline = [
         name: "license",
         choices: [
             "MIT",
-            "GNU GPLv3",
+            "GPLv3",
             "Trilogy"
         ]
 
     },
 
+
+
 ]
+
 
 const promptUser = () => {
     return inquirer.prompt(outline);
 
 };
 
-
+// const licenseBadge = {
+//     "MIT": mitBadge,
+//     "GNU-GPLv3": gnuBadge,
+// };
 
 const generateREADME = (answers) => {
 
 
-    return `# ${answers.title} 
-    ${mitBadge}
-    ${gnuBadge}
+    return `# ${answers.title} ![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)
+    
+    
+    
 ## Description 
     ${answers.description} 
     
