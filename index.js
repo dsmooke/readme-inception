@@ -144,10 +144,10 @@ The application must meet the following requirements:
 Link to my [GitHub Profile](https://github.com/${answers.userName})
 
 ## License 
-${answers.license}
 
-[MIT License](${mitLicense.txt})
-[GNU GPLv3 License](${gnuLicense})
+[${answers.license} License](${answers.license.toLowerCase}License.txt)
+
+
 
 
 ---
