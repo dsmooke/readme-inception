@@ -57,6 +57,31 @@ const outline = [
         message: "Installation Instructions (Step 3):"
     },
 
+    { // add usage information step 1
+        type: "input",
+        name: "usageStep1",
+        message: "Operating Instructions (Step 1)"
+    },
+
+    { // add usage information step 2
+        type: "input",
+        name: "usageStep2",
+        message: "Operating Instructions (Step 2)"
+    },
+
+    { // add usage information step 3
+        type: "input",
+        name: "usageStep3",
+        message: "Operating Instructions (Step 3)"
+    },
+
+    { // add usage information
+        type: "input",
+        name: "screenshot",
+        default: "screenshot-img",
+        message: "Add screenshot placeholder (ex. img-name)"
+    },
+
     { // add GitHub username to questions section
         type: "input",
         name: "userName",
@@ -117,19 +142,25 @@ const generateREADME = (answers) => {
 * [${answers.tableOfContents[5]}](#${answers.tableOfContents[5]})
 
 ## Installation
+Steps required to install application: 
 1. ${answers.installStep1}
 2. ${answers.installStep2}
 3. ${answers.installStep1}
 
 ## Usage 
-{answers.usage}
-![image alt](link.jpg)
+Operating instructions and examples for use. 
+1. ${answers.usageStep1}
+![${answers.screenshot} alt](https://via.placeholder.com/150)
+2. ${answers.usageStep2}
+![${answers.screenshot} alt](https://via.placeholder.com/150)
+3. ${answers.usageStep3}
+![${answers.screenshot} alt](https://via.placeholder.com/150)
 
 ## Contributing
-* {answers.contributing}
+If would like other developers to contribute to your application add guidelines for how to do so.
 
 ## Tests
-{answers.tests}
+Tests for application. Examples on how to run them.
 
 ## Questions
 Link to my [GitHub Profile](https://github.com/${answers.userName})
