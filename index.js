@@ -6,25 +6,18 @@ const { fileURLToPath } = require('url');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// const mitLicense = fileURLToPath("./MIT_License.txt")
-
-// const acceptanceCriteria = [
-
-//     {
-//         type: "input",
-//         name: "given",
-//         message: "GIVEN"
-//     },
-
-//     {
-//         type: "input",
-//         name: "when-1",
-//         message: "WHEN"
-
-//     },
-// ];
+const mitLicense = "mitLicense.txt";
+const mitBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+const gnuLicense = "gnuLicense.txt";
+const gnuBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
 
 
+const licenseBadge = {
+    "MIT": mitBadge,
+    "GNUGPLv3": gnuBadge,
+    "Trilogy": test
+
+};
 
 
 const outline = [
@@ -36,8 +29,9 @@ const outline = [
     },
 
     {
-        type: "input", // description
+        type: "input", // description with default lorem ipsum if no user input
         name: "description",
+        default: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         message: "Enter description of application."
     },
 
@@ -94,6 +88,7 @@ const outline = [
             "GNU GPLv3",
             "Trilogy"
         ]
+
     },
 
 ]
@@ -107,12 +102,9 @@ const promptUser = () => {
 
 const generateREADME = (answers) => {
 
-    // const mitLicense = "mitLicense.txt";
-
-    // if (answers.license === mitLicense) { //text document variable
-    //     console.log("mitLicense.txt");
 
     return `# ${answers.title} 
+    ${mitBadge}
 ## Description 
     ${answers.description} 
     
@@ -152,7 +144,10 @@ Link to my [GitHub Profile](https://github.com/${answers.userName})
 
 ## License 
 ${answers.license}
+${mitLicense}
+${gnuLicense}
 [MIT License](mitLicense.txt)
+[GNU GPLv3 License](gnuLicense.txt)
 
 
 ---
