@@ -112,7 +112,7 @@ const generateREADME = (answers) => {
 * [${answers.tableOfContents[3]}](#${answers.tableOfContents[3]}) 
 * [${answers.tableOfContents[4]}](#${answers.tableOfContents[4]})
 * [${answers.tableOfContents[5]}](#${answers.tableOfContents[5]})
-* [${answers.tableOfContents[6]}](#${answers.tableOfContents[6]})
+
 
 ## Goals
 1. {answers.goal[1]}
