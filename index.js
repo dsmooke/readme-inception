@@ -40,6 +40,12 @@ const outline = [
 
     },
 
+    { // add installation instructions
+        type: "input",
+        name: "installStep1",
+        message: "Enter installation instructions"
+    },
+
     { // adding GitHub username to questions section
         type: "input",
         name: "userName",
@@ -112,7 +118,7 @@ const generateREADME = (answers) => {
 * [${answers.tableOfContents[5]}](#${answers.tableOfContents[5]})
 
 ## Installation
-{answers.installation}
+1. ${answers.installStep1}
 
 ## Usage 
 {answers.usage}
