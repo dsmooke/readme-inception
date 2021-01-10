@@ -42,6 +42,13 @@ const outline = [
         name: "userName",
         message: "Enter your GitHub username"
     },
+
+    { // adding email address to questions section
+        type: "input",
+        name: "userEmail",
+        message: "Enter your email address"
+    },
+
     // {   // installation steps
     //     type: "input",
     //     name: "installation",
@@ -124,6 +131,8 @@ const generateREADME = (answers) => {
 
 ## Questions
 Link to my [GitHub Profile](https://github.com/${answers.userName})
+
+You can contact me at ${answers.userEmail}
 
 
 
