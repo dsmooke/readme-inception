@@ -102,15 +102,18 @@ const promptUser = () => {
 
 const generateREADME = (answers) => {
 
+    const mitLicense = "mitLicense.txt";
+
     if (answers.license === mitLicense) { //text document variable
-        console.log(answers.license);
+        console.log("mitLicense.txt");
 
         return `# ${answers.title} 
 ## Description 
     ${answers.description} 
     
-## Table of Contents ${answers.tableOfContents}
-    
+## Table of Contents 
+${answers.tableOfContents}    
+
 ## Goals
 1. {answers.goal[1]}
 2. {answers.goal[2]}
