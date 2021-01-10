@@ -15,7 +15,7 @@ const gnuBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3
 const licenseBadge = {
     "MIT": mitBadge,
     "GNUGPLv3": gnuBadge,
-    "Trilogy": test
+
 
 };
 
@@ -105,6 +105,7 @@ const generateREADME = (answers) => {
 
     return `# ${answers.title} 
     ${mitBadge}
+    ${gnuBadge}
 ## Description 
     ${answers.description} 
     
@@ -144,10 +145,9 @@ Link to my [GitHub Profile](https://github.com/${answers.userName})
 
 ## License 
 ${answers.license}
-${mitLicense}
-${gnuLicense}
-[MIT License](mitLicense.txt)
-[GNU GPLv3 License](gnuLicense.txt)
+
+[MIT License](${mitLicense.txt})
+[GNU GPLv3 License](${gnuLicense})
 
 
 ---
