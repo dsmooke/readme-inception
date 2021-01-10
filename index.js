@@ -20,21 +20,24 @@ const outline = [
     {
         type: "input", // description with default lorem ipsum if no user input
         name: "description",
-        default: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         message: "Enter description of application."
     },
 
-    // {
-    //     type: "confirm", // table of contents
-    //     name: "addTableOfContents",
-    //     message: "Include Table of Contents?"
-    // },
-
-    {   // choose which sections to include in table of contents
-        type: "confirm",
+    {   // confirm default table of contents
+        type: "checkbox",
         name: "tableOfContents",
-        message: "Select what to include in Table of Contents",
-        default: ["Description", "Installation", "Usage", "Contributing", "Tests", "License"],
+        message: "Select all to add Table of Contents",
+        default: ["Installation", "Usage", "Contributing", "Tests", "Questions", "License"],
+        choices: [
+            "Installation",
+            "Usage",
+            "Contributing",
+            "Tests",
+            "Questions",
+            "License",
+        ],
+
     },
 
     { // adding GitHub username to questions section
@@ -64,6 +67,7 @@ const outline = [
     { // select a license
         type: "list",
         name: "license",
+        message: "Select a license",
         choices: [
             "MIT",
             "GPLv3",
@@ -79,7 +83,6 @@ const promptUser = () => {
 };
 
 
-
 // var license = answers.license[i]
 // const license = {
 //     "MIT": answers.license[0],
@@ -91,18 +94,15 @@ const promptUser = () => {
 //     return answers.tableOfContents[i];
 // }
 
+
 const generateREADME = (answers) => {
 
 
     return `# ${answers.title} ![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)
     
-    
-    
 ## Description 
     ${answers.description}
 
-
-    
 ## Table of Contents 
 * [${answers.tableOfContents[0]}](#${answers.tableOfContents[0]})
 * [${answers.tableOfContents[1]}](#${answers.tableOfContents[1]})    
@@ -111,7 +111,6 @@ const generateREADME = (answers) => {
 * [${answers.tableOfContents[4]}](#${answers.tableOfContents[4]})
 * [${answers.tableOfContents[5]}](#${answers.tableOfContents[5]})
 
-
 ## Installation
 {answers.installation}
 
@@ -119,9 +118,7 @@ const generateREADME = (answers) => {
 {answers.usage}
 ![image alt](link.jpg)
 
-## License 
 
-[${answers.license} License](${answers.license}License.txt)
 
 ## Contributing
 {answers.contributing}
@@ -132,9 +129,10 @@ const generateREADME = (answers) => {
 ## Questions
 Link to my [GitHub Profile](https://github.com/${answers.userName})
 
-You can contact me at ${answers.userEmail}
+You can reach me at ${answers.userEmail} if you have any additional questions. 
 
-
+## License 
+[${answers.license} License](${answers.license}License.txt)
 
 
 
