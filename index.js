@@ -26,7 +26,7 @@ const outline = [
 
     {
         type: "confirm", // table of contents
-        name: "tableOfContents",
+        name: "addTableOfContents",
         message: "Include Table of Contents?"
     },
 
@@ -34,7 +34,7 @@ const outline = [
         type: "checkbox",
         name: "tableOfContents",
         message: "Select what to include in Table of Contents",
-        default: ["Description", "Installation", "Usage", "Contributing", "Tests"],
+        default: ["Description", "Installation", "Usage", "Contributing", "Tests", "License"],
         choices: [
             "Description",
             "Goals",
@@ -106,7 +106,13 @@ const generateREADME = (answers) => {
     ${answers.description} 
     
 ## Table of Contents 
-${answers.tableOfContents}    
+* [${answers.tableOfContents[0]}](#${answers.tableOfContents[0]})
+* [${answers.tableOfContents[1]}](#${answers.tableOfContents[1]})    
+* [${answers.tableOfContents[2]}](#${answers.tableOfContents[2]}) 
+* [${answers.tableOfContents[3]}](#${answers.tableOfContents[3]}) 
+* [${answers.tableOfContents[4]}](#${answers.tableOfContents[4]})
+* [${answers.tableOfContents[5]}](#${answers.tableOfContents[5]})
+* [${answers.tableOfContents[6]}](#${answers.tableOfContents[6]})
 
 ## Goals
 1. {answers.goal[1]}
