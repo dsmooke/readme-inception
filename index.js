@@ -24,11 +24,11 @@ const outline = [
         message: "Enter description of application."
     },
 
-    {
-        type: "confirm", // table of contents
-        name: "addTableOfContents",
-        message: "Include Table of Contents?"
-    },
+    // {
+    //     type: "confirm", // table of contents
+    //     name: "addTableOfContents",
+    //     message: "Include Table of Contents?"
+    // },
 
     {   // choose which sections to include in table of contents
         type: "checkbox",
@@ -75,7 +75,7 @@ const outline = [
         choices: [
             "MIT",
             "GPLv3",
-            "Trilogy"
+            "MPL%202.0"
         ]
 
     },
@@ -113,41 +113,36 @@ const generateREADME = (answers) => {
 * [${answers.tableOfContents[4]}](#${answers.tableOfContents[4]})
 * [${answers.tableOfContents[5]}](#${answers.tableOfContents[5]})
 
-
-## Goals
-1. {answers.goal[1]}
-2. {answers.goal[2]}
-3. {answers.goal[3]}
-
-## Definitions 
-{answers.term[1]}
-: {answers.defintion[1]}
-
 ## Instructions
 ### User Story {answers.userStory}
 
 ### Acceptance Criteria
 The application must meet the following requirements:
 
-## Installation
-{answers.installation}
-
 ## Developer 
 {answers.developer}
+
+## Installation
+{answers.installation}
 
 ## Usage 
 {answers.usage}
 ![image alt](link.jpg)
 
-## Credits
-{answers.credits}
+## License 
+
+[${answers.license} License](${answers.license}License.txt)
+
+## Contributing
+{answers.contributing}
+
+## Tests
+{answers.tests}
 
 ## Questions
 Link to my [GitHub Profile](https://github.com/${answers.userName})
 
-## License 
 
-[${answers.license} License](${answers.license}License.txt)
 
 
 
