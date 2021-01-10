@@ -31,27 +31,12 @@ const outline = [
     // },
 
     {   // choose which sections to include in table of contents
-        type: "checkbox",
+        type: "confirm",
         name: "tableOfContents",
         message: "Select what to include in Table of Contents",
         default: ["Description", "Installation", "Usage", "Contributing", "Tests", "License"],
-        choices: [
-            "Description",
-            "Goals",
-            "UserStory",
-            "AcceptanceCriteria",
-            "Installation",
-            "Usage",
-            "Developer",
-            "Credits",
-            "License",
-            "Contributing",
-            "Tests",
-            "Questions"
-        ],
-
-
     },
+
     { // adding GitHub username to questions section
         type: "input",
         name: "userName",
@@ -77,11 +62,7 @@ const outline = [
             "GPLv3",
             "MPL%202.0"
         ]
-
     },
-
-
-
 ]
 
 
@@ -90,10 +71,18 @@ const promptUser = () => {
 
 };
 
-// const licenseBadge = {
-//     "MIT": mitBadge,
-//     "GNU-GPLv3": gnuBadge,
+
+
+// var license = answers.license[i]
+// const license = {
+//     "MIT": answers.license[0],
+//     "GNU-GPLv3": answers.license[1],
+//     "Mozilla": answers.license[2]
 // };
+
+// for (i = 0; i < answers.tableOfContents.length; i++) {
+//     return answers.tableOfContents[i];
+// }
 
 const generateREADME = (answers) => {
 
@@ -103,7 +92,9 @@ const generateREADME = (answers) => {
     
     
 ## Description 
-    ${answers.description} 
+    ${answers.description}
+
+
     
 ## Table of Contents 
 * [${answers.tableOfContents[0]}](#${answers.tableOfContents[0]})
@@ -113,14 +104,6 @@ const generateREADME = (answers) => {
 * [${answers.tableOfContents[4]}](#${answers.tableOfContents[4]})
 * [${answers.tableOfContents[5]}](#${answers.tableOfContents[5]})
 
-## Instructions
-### User Story {answers.userStory}
-
-### Acceptance Criteria
-The application must meet the following requirements:
-
-## Developer 
-{answers.developer}
 
 ## Installation
 {answers.installation}
