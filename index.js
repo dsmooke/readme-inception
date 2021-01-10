@@ -11,20 +11,20 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 const outline = [
 
-    {
-        type: "input", // title
+    {   // add title
+        type: "input",
         name: "title",
         message: "What is the name of your project?"
     },
 
-    {
-        type: "input", // description with default lorem ipsum if no user input
+    {   // add description
+        type: "input",
         name: "description",
         default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         message: "Enter description of application."
     },
 
-    {   // confirm default table of contents
+    {   // add default table of contents
         type: "checkbox",
         name: "tableOfContents",
         message: "Select all to add Table of Contents",
@@ -37,38 +37,37 @@ const outline = [
             "Questions",
             "License",
         ],
-
     },
 
-    { // add installation instructions
+    { // add installation instruction step 1
         type: "input",
         name: "installStep1",
-        message: "Enter installation instructions"
+        message: "Installation Instructions (Step 1):"
     },
 
-    { // adding GitHub username to questions section
+    { // add installation instruction step 2
+        type: "input",
+        name: "installStep2",
+        message: "Installation Instructions (Step 2):"
+    },
+
+    { // add installation instruction step 3
+        type: "input",
+        name: "installStep3",
+        message: "Installation Instructions (Step 3):"
+    },
+
+    { // add GitHub username to questions section
         type: "input",
         name: "userName",
         message: "Enter your GitHub username"
     },
 
-    { // adding email address to questions section
+    { // add email address to questions section
         type: "input",
         name: "userEmail",
         message: "Enter your email address"
     },
-
-    // {   // installation steps
-    //     type: "input",
-    //     name: "installation",
-    //     message: "What are the steps required to install your project?"
-    // },
-
-    // {   // usage instructions
-    //     type: "input",
-    //     name: "usage",
-    //     message: "Provide instructions and examples for use."
-    // },
 
     { // select a license
         type: "list",
@@ -119,15 +118,15 @@ const generateREADME = (answers) => {
 
 ## Installation
 1. ${answers.installStep1}
+2. ${answers.installStep2}
+3. ${answers.installStep1}
 
 ## Usage 
 {answers.usage}
 ![image alt](link.jpg)
 
-
-
 ## Contributing
-{answers.contributing}
+* {answers.contributing}
 
 ## Tests
 {answers.tests}
