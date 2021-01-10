@@ -69,6 +69,11 @@ const outline = [
 
 
     },
+    { // adding GitHub username to questions section
+        type: "input",
+        name: "userName",
+        message: "Enter your GitHub username"
+    }
     // {   // installation steps
     //     type: "input",
     //     name: "installation",
@@ -102,12 +107,12 @@ const promptUser = () => {
 
 const generateREADME = (answers) => {
 
-    const mitLicense = "mitLicense.txt";
+    // const mitLicense = "mitLicense.txt";
 
-    if (answers.license === mitLicense) { //text document variable
-        console.log("mitLicense.txt");
+    // if (answers.license === mitLicense) { //text document variable
+    //     console.log("mitLicense.txt");
 
-        return `# ${answers.title} 
+    return `# ${answers.title} 
 ## Description 
     ${answers.description} 
     
@@ -142,6 +147,9 @@ The application must meet the following requirements:
 ## Credits
 {answers.credits}
 
+## Questions
+[GitHub Profile](https://github.com/${answers.userName})
+
 ## License 
 ${answers.license}
 [MIT License]("mitLicense.txt")
@@ -152,22 +160,22 @@ ${answers.license}
 © 2020 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 `
 
+}
+
+const init = async () => {
+
+    try {
+        const addedText = await promptUser();
+        // console.log(addedText);
+        const readme = generateREADME(addedText);
+        // console.log(readme);
+        await writeFileAsync("New_README.md", readme);
+
+        console.log("Successfully wrote README.md");
+
+    } catch (error) {
+        console.log(error);
     }
+}
 
-    const init = async () => {
-
-        try {
-            const addedText = await promptUser();
-            // console.log(addedText);
-            const readme = generateREADME(addedText);
-            // console.log(readme);
-            await writeFileAsync("New_README.md", readme);
-
-            console.log("Successfully wrote README.md");
-
-        } catch (error) {
-            console.log(error);
-        }
-    }
-
-    init();
+init();
