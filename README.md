@@ -149,7 +149,8 @@ What are the steps required to install your project? Provide a step-by-step desc
 ## Usage
 Provide instructions and examples for use. Include screenshots as needed.
 
-
+![mp4](NEW-Generated-README.mp4)
+![Gif](New-generated-readme.gif)
 
 ## Credits 
 List your collaborators, if any, with links to their GitHub profiles. 
