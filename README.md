@@ -116,7 +116,7 @@ What are the steps required to install your project? Provide a step-by-step desc
     * Open Terminal (if MacOS), create a new directory using `mkdir project-name`
     * Make sure you are in the *root file* of your local repository before you create any files. 
 3. Clone your GitHub repository to your local computer (make sure you are in the root folder of your new directory)
-    * in Terminal: ```
+    ```
     git clone ssh-key-from-repository
     ```
 4. Create a .gitignore file:
@@ -143,18 +143,6 @@ const writeFileAsync = util.promisify(fs.writeFile);
 7. ![code snippet](./imgs/install-description-section.png)
 ![code snippet](./imgs/prompts-terminal-view.png)
 
-/* image? ![alt text](image.jpg)*/
-* Test format
-    * test part
-    - test list 
-    3. test number
-
-
-2. ~~Open a text-editor, I will be using VScode.~~
-3. 
-> `const inquirer = require("inquirer");`
-`const fs = require("fs");`
-`const util = require("util");`
 
 
 ## Usage
