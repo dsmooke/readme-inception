@@ -113,7 +113,8 @@ THEN I am taken to the corresponding section of the README
 ```
 
 ## Installation
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+
+Steps required to create  README generator. Provide a step-by-step description of how to get the development environment running.
 
 1. Create a new repository. 
     * Open GitHub and create new repository.
@@ -171,16 +172,11 @@ If followed tutorials, include links to those here as well.
 - ["Await"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
 ## License 
 
-The last section of a README is a license. This lets other developers know what they can and cannot do with your project.
-
-## Instructions
-
-It might be a good idea to start building out the HTML skeleton in a real HTML file. Once you're happy with the HTML file's appearance in the browser, you can copy and paste its contents into a string template literal. Then you can write a function to insert the user input into the appropriate places in the HTML string before writing it to the file system.
+[MIT](MITLicense.txt)
 
 ## Developer
 
-* Instead of using promises, how can we use `async/await` and `try/catch` to control the flow of our asynchronous code?
-
+![generated readme gif](New-generated-readme.gif)
 ---
 
 © 2020 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
