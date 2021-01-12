@@ -160,11 +160,8 @@ Your newly generated README.md should look like this:
 ![Gif](New-generated-readme.gif)
 
 ## Credits 
-List your collaborators, if any, with links to their GitHub profiles. 
 
-If you used asny third-party assets that require attribution, list the creators with links to their primary web presence in this section. 
-
-If followed tutorials, include links to those here as well. 
+Reference articles:
 
 - ["How to use the Inquirer Node package"](https://www.educative.io/edpresso/how-to-use-the-inquirer-node-package)
 - ["The Node.js fs module"](https://nodejs.dev/learn/the-nodejs-fs-module)
