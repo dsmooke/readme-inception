@@ -140,6 +140,8 @@ const { fileURLToPath } = require('url');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 ```
+7. ![code snippet](./imgs/install-description-section.png)
+![code snippet](./imgs/prompts-terminal-view.png)
 
 /* image? ![alt text](image.jpg)*/
 * Test format
