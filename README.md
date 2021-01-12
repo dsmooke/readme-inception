@@ -157,7 +157,9 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 ## Usage
 Provide instructions and examples for use. Include screenshots as needed.
-
+Enter your inputs via the command-line...
+![cml-demo](.gif)
+Your newly generated README.md should look like this:
 ![Gif](New-generated-readme.gif)
 
 ## Credits 
