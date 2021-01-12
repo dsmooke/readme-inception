@@ -26,10 +26,6 @@ This assigment utilizes Node.js and the Inquirer.js package.
 2. Invoke the application by using the following command: `node index.js`
 
 3. Use Screencastify and provide a link to a walkthrough video that demonstrates its functionality.
-
-### Definitions
-The goals above and the application can be further understood with the following definitions:
-
 * You’ll need the following tools and technologies to accomplish this:
 
   * `fs` for writing to the file system
@@ -40,6 +36,9 @@ The goals above and the application can be further understood with the following
 
   * Promises for handling asynchronous behavior
 
+### Definitions
+The goals above and the application can be further understood with the following definitions:
+
 **node.js**
 : an implementation of the V8 JavaScript engine without Chrome. It allows you to write server-side code using JavaScript. This means that you no longer need a browser to run JavaScript. You can do so from the command line. Node.js ships with a **standard library**.
 
@@ -48,12 +47,16 @@ The goals above and the application can be further understood with the following
 
 **command-line**
 : processes commands to a computer program in the form of lines of text; developers use to communicate with computers.
+
 **dependencies**
 : when a program or piece of software relies on one or more other programs to run; where manage the set of dependent programs that the application relies on. 
+
 **inquirer**
 : an npm package that provides an easy way to capture user input in your `node.js` command-line interface applications. It provides several methods for asking questions and returning answers from the user that can be accessed by a `.then` promise function. <!--check for .then promise function>
+
 **promise function**
 : a promise represents a value not necessarily known when the promise is created. It lets asynchronous methods return values instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future. 
+
 **`require()`**
 :
 **`fs`**
@@ -66,10 +69,13 @@ The goals above and the application can be further understood with the following
 
 **`util`**
 : module that provides access to some utility functions as well as provides some functions to print formatted strings. Use `require('util')` to access these functions. 
+
 **`promisify`**
 : `util.promisify` converts a regular function into an async function, a function that returns a promise. The function passed to `util.promisify` must follow the node.js callback style.
+
 **`try...catch(error)`**
 : used to handle exceptions when using the synchronous form.
+
 **`await`**
 : operator used to wait for a `promise`. It can only be used inside an `async` function. The `await` expression causes `async` function execution to pause until a `promise` is settled (fulfilled or rejected) and to resume execution of the `async` function after fulfillment. When resumed, the value of the `await` expression is that of the fulfilled `promise`.
 
