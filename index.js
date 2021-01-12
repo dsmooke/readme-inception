@@ -157,10 +157,10 @@ Operating instructions and examples for use.
 ![${answers.screenshot} alt](https://via.placeholder.com/150)
 
 ## Contributing
-If would like other developers to contribute to your application add guidelines for how to do so.
+*If you would like other developers to contribute to your application add guidelines for how to do so.*
 
 ## Tests
-Tests for application. Examples on how to run them.
+*Tests for application. Examples on how to run them.*
 
 ## Questions
 Link to my [GitHub Profile](https://github.com/${answers.userName})
