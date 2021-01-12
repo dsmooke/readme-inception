@@ -22,19 +22,20 @@ This assigment utilizes Node.js and the Inquirer.js package.
 ## Goals 
 
 1. To create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
+    
+2. Use the following tools and technologies:
+    * `fs` for writing to the file system
 
-2. Invoke the application by using the following command: `node index.js`
+    * `inquirer` for collecting user input
 
-3. Use Screencastify and provide a link to a walkthrough video that demonstrates its functionality.
-* You’ll need the following tools and technologies to accomplish this:
+    * String template literals for generating a string version of the HTML/README.md document before it is written to the file system
 
-  * `fs` for writing to the file system
+    * Promises for handling asynchronous behavior
 
-  * `inquirer` for collecting user input
+3. Invoke the application by using the following command: `node index.js`
 
-  * String template literals for generating a string version of the HTML/README.md document before it is written to the file system
+4. Use Screencastify and provide a link to a walkthrough video that demonstrates its functionality.
 
-  * Promises for handling asynchronous behavior
 
 ### Definitions
 The goals above and the application can be further understood with the following definitions:
@@ -52,20 +53,13 @@ The goals above and the application can be further understood with the following
 : when a program or piece of software relies on one or more other programs to run; where manage the set of dependent programs that the application relies on. 
 
 **inquirer**
-: an npm package that provides an easy way to capture user input in your `node.js` command-line interface applications. It provides several methods for asking questions and returning answers from the user that can be accessed by a `.then` promise function. <!--check for .then promise function>
+: an npm package that provides an easy way to capture user input in your `node.js` command-line interface applications. It provides several methods for asking questions and returning answers from the user that can be accessed by a `.then` promise function. 
 
 **promise function**
 : a promise represents a value not necessarily known when the promise is created. It lets asynchronous methods return values instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future. 
 
-**`require()`**
-:
 **`fs`**
 : The `fs` module of Node.js provides a lot of useful functions to access and interact with the *file system*. You do not install it because it is a part of the Node.js core. It can be used by requiring it 
->`const fs = require('fs')`
-
-~~common use for the File System module. When wrapped around a standard POSIX function it is referred to as a method, ex. `fs.readFile()` is used to read files on your computer.~~
-
-~~Asynchronous callback functions. Synchronous versions of the calls will block the entire process until they complete - halting all connections.~~
 
 **`util`**
 : module that provides access to some utility functions as well as provides some functions to print formatted strings. Use `require('util')` to access these functions. 
@@ -114,7 +108,7 @@ THEN I am taken to the corresponding section of the README
 
 ## Installation
 
-Steps required to create  README generator. Provide a step-by-step description of how to get the development environment running.
+Steps required to create  README generator:
 
 1. Create a new repository. 
     * Open GitHub and create new repository.
@@ -149,7 +143,6 @@ const writeFileAsync = util.promisify(fs.writeFile);
 ```
 7. ![code snippet](./imgs/install-description-section.png)
 ![code snippet](./imgs/prompts-terminal-view.png)
-
 
 
 ## Usage
