@@ -6,6 +6,8 @@ This is the eigth assigment from the UConn Coding Boot Camp curriculum. We have 
 
 This assigment utilizes Node.js and the Inquirer.js package.
 
+View the running of the application [here](https://www.youtube.com/watch?v=Ksv3WGhtsKs&feature=youtu.be)
+
 ## Table of Contents
 
 * [Goals](#goals)
