@@ -179,9 +179,6 @@ Reference articles:
 
 [MIT](MITLicense.txt)
 
-## Developer
-
-![generated readme gif](New-generated-readme.gif)
 ---
 
 © 2020 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
