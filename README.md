@@ -156,7 +156,8 @@ Your inputs should look like this when you generate the README and it converts i
 The final result of your newly generated README.md should look like this: 
 ![New README Gif](New-generated-readme.gif)
 
-Complete run through of the application: 
+Watch a complete run through of the application, or watch on YouTube [here](https://www.youtube.com/watch?v=Ksv3WGhtsKs&feature=youtu.be)
+
 ![README run through Gif](imgs/walk-thru-readme-generator.gif)
 
 ## Credits 
