@@ -141,7 +141,10 @@ const { fileURLToPath } = require('url');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 ```
-7. Your inputs should look like this before your README is generated.
+7. 
+
+## Usage
+Enter your inputs via the command-line...Your inputs should look like this in the terminal before your README is generated.
 ![view of terminal prompts](./imgs/prompts-terminal-view.png)
 
 Your inputs should look like this when you generate the README and it converts into markdown format.
@@ -150,10 +153,8 @@ Your inputs should look like this when you generate the README and it converts i
 The final result should look like this: 
 ![New README Gif](New-generated-readme.gif)
 
-## Usage
-Provide instructions and examples for use. Include screenshots as needed.
 
-Enter your inputs via the command-line...
+
 
 Your newly generated README.md should look like this:
 ![Gif](New-generated-readme.gif)
@@ -166,6 +167,7 @@ Reference articles:
 - ["The Node.js fs module"](https://nodejs.dev/learn/the-nodejs-fs-module)
 - ["Promise"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - ["Await"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+
 ## License 
 
 [MIT](MITLicense.txt)
