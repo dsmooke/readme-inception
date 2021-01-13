@@ -143,7 +143,13 @@ const { fileURLToPath } = require('url');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 ```
+7. Copy and paste the code (or fork it) from the `index.js` within this repository.
 
+8. Save file. Run `index.js` file within terminal using `node index.js`
+
+9. If working, answer the prompts by entering your own inputs via the command line. 
+
+10. A file called **New_README.md** will be created upon completeion. 
 
 ## Usage
 
