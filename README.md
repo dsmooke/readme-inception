@@ -6,7 +6,7 @@ This is the eigth assigment from the UConn Coding Boot Camp curriculum. We have 
 
 This assigment utilizes Node.js and the Inquirer.js package.
 
-View the running of the application [here](https://www.youtube.com/watch?v=Ksv3WGhtsKs&feature=youtu.be)
+View the application [here](https://www.youtube.com/watch?v=Ksv3WGhtsKs&feature=youtu.be)
 
 ## Table of Contents
 
@@ -155,6 +155,9 @@ Your inputs should look like this when you generate the README and it converts i
 
 The final result of your newly generated README.md should look like this: 
 ![New README Gif](New-generated-readme.gif)
+
+Complete run through of the application: 
+![README run through Gif](imgs/walk-thru-readme-generator.gif)
 
 ## Credits 
 
