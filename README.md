@@ -141,23 +141,18 @@ const { fileURLToPath } = require('url');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 ```
-7. 
+
 
 ## Usage
+
 Enter your inputs via the command-line...Your inputs should look like this in the terminal before your README is generated.
 ![view of terminal prompts](./imgs/prompts-terminal-view.png)
 
 Your inputs should look like this when you generate the README and it converts into markdown format.
 ![code to md file](./imgs/new-readme-sample-md-file.png)
 
-The final result should look like this: 
+The final result of your newly generated README.md should look like this: 
 ![New README Gif](New-generated-readme.gif)
-
-
-
-
-Your newly generated README.md should look like this:
-![Gif](New-generated-readme.gif)
 
 ## Credits 
 
