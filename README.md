@@ -1,15 +1,20 @@
 # README Inception 
 
+<span align="left">
+
+<a href="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic"><img alt="M.I.T. License use" src="https://img.shields.io/badge/License-MIT-brightgreen?style=plastic"/></a>
+
+ </span>
+ 
 ## Description
 
-This is the eigth assigment from the UConn Coding Boot Camp curriculum. We have covered the following topics thus far: Git, Terminal, GitHub, GitHub Pages, Web Accessibility, HTML, CSS, JavaScript, jQuery, Bootstrap, DOM Traversal, Web APIs, Third-Party APIs, and Server-Side APIs.
-
-This assigment utilizes Node.js and the Inquirer.js package.
+A command-line application that dynamically generates a professional README file from a user's input using Node.js and the Inquirer.js package.
 
 View the application [here](https://www.youtube.com/watch?v=Ksv3WGhtsKs&feature=youtu.be)
 
 ## Table of Contents
 
+* [Technologies Used](#technologies-used)
 * [Goals](#goals)
 * [Definitions](#definitions)
 * [Instructions](#instructions)
@@ -20,6 +25,12 @@ View the application [here](https://www.youtube.com/watch?v=Ksv3WGhtsKs&feature=
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
+
+## Technologies Used
+
+- Node.js
+- Inquirer package
+- Terminal
 
 ## Goals 
 
@@ -174,6 +185,10 @@ Reference articles:
 - ["The Node.js fs module"](https://nodejs.dev/learn/the-nodejs-fs-module)
 - ["Promise"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - ["Await"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+- 
+## Contributing
+
+[Dana Smooke]("https://github.com/dsmooke")
 
 ## License 
 
